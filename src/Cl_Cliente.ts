@@ -4,11 +4,11 @@ export default class Cl_Cliente {
     private _edad: number = 0;
     private _tipoServicio: number = 0;
 
-    constructor(nombre: string, sexo: string, edad: number, tipoServicio: number) {
-        this._nombre = nombre;
-        this._sexo = sexo;
-        this._edad = edad;
-        this._tipoServicio = tipoServicio;
+    constructor(n: string, s: string, e: number, tS: number) {
+        this._nombre = n;
+        this._sexo = s;
+        this._edad = e;
+        this._tipoServicio = tS;
     }
 
     get nombre(): string {

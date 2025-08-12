@@ -6,8 +6,7 @@ export default class Cl_Taxi {
     private acEdad: number = 0;
     private cnClientes: number = 0;
 
-    constructor() {
-    }
+    constructor() {}
 
     procesarCliente(c: Cl_Cliente): void {
         this.cnMayorDEdadF = 0;
@@ -15,14 +14,13 @@ export default class Cl_Taxi {
         this.acEdad = 0;
         this.cnClientes = 0;
 
-        let cliente: Cl_Cliente = c;
-        if (cliente.edad >= 18)  {
-            if (cliente.sexo === "f") {
+        if (c.edad >= 18)  {
+            if (c.sexo === "f") {
                 this.cnMayorDEdadF++;
             }   
         }
             this.cnClientes++;
-            this.acEdad += cliente.edad;
+            this.acEdad += c.edad;
     }
 
     clientesMayoresDeEdadF(): number {
