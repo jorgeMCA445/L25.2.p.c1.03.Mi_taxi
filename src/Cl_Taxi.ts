@@ -1,4 +1,4 @@
-import Cl_Cliente from './Cl_Cliente';
+import Cl_Cliente from "./Cl_Cliente";
 
 export default class Cl_Taxi {
     private cnMayorDEdadF: number = 0;
