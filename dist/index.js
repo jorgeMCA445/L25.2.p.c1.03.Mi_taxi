@@ -1,15 +1,10 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const Cl_Cliente_js_1 = __importDefault(require("./Cl_Cliente.js"));
-const Cl_Taxi_js_1 = __importDefault(require("./Cl_Taxi.js"));
-let cliente1 = new Cl_Cliente_js_1.default("Juan", "m", 20, 2);
-let cliente2 = new Cl_Cliente_js_1.default("Mary", "f", 15, 1);
-let cliente3 = new Cl_Cliente_js_1.default("Lin", "f", 18, 2);
-let cliente4 = new Cl_Cliente_js_1.default("Ana", "f", 19, 1);
-let taxi = new Cl_Taxi_js_1.default();
+import Cl_Cliente from "./Cl_Cliente.js";
+import Cl_Taxi from "./Cl_Taxi.js";
+let cliente1 = new Cl_Cliente("Juan", "m", 20, 2);
+let cliente2 = new Cl_Cliente("Mary", "f", 15, 1);
+let cliente3 = new Cl_Cliente("Lin", "f", 18, 2);
+let cliente4 = new Cl_Cliente("Ana", "f", 19, 1);
+let taxi = new Cl_Taxi();
 taxi.procesarCliente(cliente1);
 taxi.procesarCliente(cliente2);
 taxi.procesarCliente(cliente3);

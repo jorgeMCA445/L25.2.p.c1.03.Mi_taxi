@@ -1,15 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Cl_Cliente {
-    constructor(nombre, sexo, edad, tipoServicio) {
+export default class Cl_Cliente {
+    constructor(n, s, e, tS) {
         this._nombre = "";
         this._sexo = "";
         this._edad = 0;
         this._tipoServicio = 0;
-        this._nombre = nombre;
-        this._sexo = sexo;
-        this._edad = edad;
-        this._tipoServicio = tipoServicio;
+        this._nombre = n;
+        this._sexo = s;
+        this._edad = e;
+        this._tipoServicio = tS;
     }
     get nombre() {
         return this._nombre;
@@ -36,4 +34,3 @@ class Cl_Cliente {
         this._tipoServicio = +tS;
     }
 }
-exports.default = Cl_Cliente;
