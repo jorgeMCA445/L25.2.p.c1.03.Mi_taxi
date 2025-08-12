@@ -2,8 +2,8 @@ import Cl_Cliente from "./Cl_Cliente";
 
 export default class Cl_Taxi {
     private cnMayorDEdadF: number = 0;
-    private menorEdad: number = 0;
-    private acEdad: number = 110; // Asumiendo que la edad máxima es 99
+    private menorEdad: number = 100; // Asumiendo que la edad mínima es 0
+    private acEdad: number = 0; 
     private cntClientes: number = 0;
 
     constructor() { }

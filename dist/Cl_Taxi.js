@@ -1,8 +1,8 @@
 export default class Cl_Taxi {
     constructor() {
         this.cnMayorDEdadF = 0;
-        this.menorEdad = 0;
-        this.acEdad = 110; // Asumiendo que la edad máxima es 99
+        this.menorEdad = 100; // Asumiendo que la edad mínima es 0
+        this.acEdad = 0;
         this.cntClientes = 0;
     }
     procesarCliente(c) {
