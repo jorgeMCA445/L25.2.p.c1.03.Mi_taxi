@@ -1,10 +1,6 @@
 export default class Cl_mTaxi {
     constructor() {
         this.cnMayorDEdadF = 0;
-        this.menorEdad = 100; // Asumiendo que la edad mínima es 0
-        this.acEdad = 0;
-        this.cntClientes = 0;
-        this.cnMayorDEdadF = 0;
         this.menorEdad = 100; // Asumiendo que la edad mínima es
         this.acEdad = 0;
         this.cntClientes = 0;

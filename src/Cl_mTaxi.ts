@@ -1,10 +1,10 @@
 import Cl_mCliente from "./Cl_mCliente";
 
 export default class Cl_mTaxi {
-    private cnMayorDEdadF: number = 0;
-    private menorEdad: number = 100; // Asumiendo que la edad mínima es 0
-    private acEdad: number = 0;
-    private cntClientes: number = 0;
+    private cnMayorDEdadF: number;
+    private menorEdad: number; // Asumiendo que la edad mínima es 0
+    private acEdad: number;
+    private cntClientes: number;
 
     constructor() {
         this.cnMayorDEdadF = 0;
@@ -20,7 +20,6 @@ export default class Cl_mTaxi {
         if (cliente.edad >= 18 && cliente.sexo === "f") {
             this.cnMayorDEdadF++;
         }
-
         this.acEdad += cliente.edad;
         this.cntClientes++;
     }

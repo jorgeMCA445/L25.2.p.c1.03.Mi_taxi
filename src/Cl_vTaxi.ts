@@ -31,7 +31,7 @@ export default class Cl_vTaxi {
         });
         return this.mCliente;
     }
-    repotarCliente(
+    repotarCliente( 
         clientesMayoresDeEdadF: number,
         menorEdad: number,
         promedioDEdad: number,
