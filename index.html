@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAXi</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h1>Taxi</h1>
-    <h2>Bienvenido a la aplicacion de taxi</h2>
-    <script src="./dist/index.js" type="module"></script>
-    <div id="salida"></div>
+    <section id="clienteForm">
+        <h3>datos de los clientes</h3>
+        <input type="text" id="inNombre" placeholder="nombre"></input>
+        <input type="number" id="inEdad" placeholder="edad"></input>
+        <input type="text" id="inSexo" placeholder="sexo m=masculino, f=femenino"></input>
+        <input type="number" id="inTipoServicio" placeholder="tipo de servicio(1, 2)"></input>
+        <button id="btnAgregar">Agregar cliente</button>
+    </section>
+    <section id="mainForm">
+        <h3>Datos del taxi</h3>
+        <div id="mainForm_salida"></div>
+        </section>
+        <script type="module">
+            import Cl_principal from "./dist/principal.js";
+
+            window.addEventListener("DOMContentLoaded", () => {
+                new Cl_principal();
+            });
+        </script>
+
 
 </body>
 

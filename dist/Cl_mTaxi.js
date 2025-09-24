@@ -1,21 +1,22 @@
-export default class Cl_Taxi {
+export default class Cl_mTaxi {
     constructor() {
         this.cnMayorDEdadF = 0;
         this.menorEdad = 100; // Asumiendo que la edad mínima es 0
         this.acEdad = 0;
         this.cntClientes = 0;
+        this.cnMayorDEdadF = 0;
+        this.menorEdad = 100; // Asumiendo que la edad mínima es
+        this.acEdad = 0;
+        this.cntClientes = 0;
     }
-    procesarCliente(c) {
-        if (this.menorEdad === 0 || c.edad < this.menorEdad) {
-            this.menorEdad = c.edad;
+    procesarCliente(cliente) {
+        if (cliente.edad < this.menorEdad) {
+            this.menorEdad = cliente.edad;
         }
-        if (c.edad >= 18 && c.sexo === "f") {
+        if (cliente.edad >= 18 && cliente.sexo === "f") {
             this.cnMayorDEdadF++;
         }
-        if (c.edad < this.menorEdad) {
-            this.menorEdad = c.edad;
-        }
-        this.acEdad += c.edad;
+        this.acEdad += cliente.edad;
         this.cntClientes++;
     }
     clientesMayoresDeEdadF() {
