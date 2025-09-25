@@ -5,6 +5,6 @@ export default class Cl_controlador {
     }
     procesarCliente() {
         this.modelo.procesarCliente(this.vista.procesarCliente());
-        this.vista.repotarCliente(this.modelo.clientesMayoresDeEdadF(), this.modelo.menorEdadAtendida(), this.modelo.promedioDEdad());
+        this.vista.repotarCliente(this.modelo.clientesMayoresDeEdadF(), this.modelo.menorEdadAtendida(), this.modelo.promedioDEdad(), this.modelo.cantidadServicioL1());
     }
 }

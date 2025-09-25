@@ -5,12 +5,14 @@ export default class Cl_mTaxi {
     private menorEdad: number; // Asumiendo que la edad mínima es 0
     private acEdad: number;
     private cntClientes: number;
+    private cnServicioL1: number;
 
     constructor() {
         this.cnMayorDEdadF = 0;
         this.menorEdad = 100; // Asumiendo que la edad mínima es
         this.acEdad = 0;
         this.cntClientes = 0;
+        this.cnServicioL1 = 0;
     }
 
     procesarCliente(cliente: Cl_mCliente): void {
@@ -22,6 +24,9 @@ export default class Cl_mTaxi {
         }
         this.acEdad += cliente.edad;
         this.cntClientes++;
+        if (cliente.tipoServicio === 1) {
+            this.cnServicioL1++;
+        }
     }
 
     clientesMayoresDeEdadF(): number {
@@ -35,6 +40,8 @@ export default class Cl_mTaxi {
             return 0; // Evitar división por cero
         }
         return this.acEdad / this.cntClientes;
-
+    }
+    cantidadServicioL1(): number {
+        return this.cnServicioL1;
     }
 }

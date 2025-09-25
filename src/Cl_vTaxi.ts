@@ -35,12 +35,15 @@ export default class Cl_vTaxi {
         clientesMayoresDeEdadF: number,
         menorEdad: number,
         promedioDEdad: number,
+        cantidadServicioL1: number,
 
     ): void {
         if (!this.mCliente) throw new Error("no hay articulo procesado");
         this.salida.innerHTML += `<br><br> el cliente feminino mayor de edad atendido es: ${clientesMayoresDeEdadF}
         <br>El cliente de menor edad tiene ${menorEdad} años.
-        <br>El promedio de edad de los clientes es ${promedioDEdad.toFixed(0)} años.`;
+        <br>El promedio de edad de los clientes es ${promedioDEdad.toFixed(0)} años.
+        <br>La cantidad de servicios de tipo Largo es: ${cantidadServicioL1}
+        `;
 
     }
 }

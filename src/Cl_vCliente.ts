@@ -11,7 +11,7 @@ export default class Cl_vCliente {
         this.inNombre = document.getElementById("inNombre") as HTMLInputElement;
         this.inEdad = document.getElementById("inEdad") as HTMLInputElement;
         this.inSexo = document.getElementById("inSexo") as HTMLInputElement;
-        this.inTipoServicio = document.getElementById("inTipoServicio") as HTMLInputElement;
+        this.inTipoServicio = document.getElementById("inTipoServicio") as HTMLInputElement;  
         this.btnAgregar = document.getElementById("btnAgregar") as HTMLElement;
         if (
             !this.inNombre ||

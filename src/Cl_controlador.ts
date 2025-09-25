@@ -15,7 +15,8 @@ export default class Cl_controlador {
         this.vista.repotarCliente(
             this.modelo.clientesMayoresDeEdadF(),
             this.modelo.menorEdadAtendida(),
-            this.modelo.promedioDEdad()
+            this.modelo.promedioDEdad(),
+            this.modelo.cantidadServicioL1(),
         );
     }
 }
