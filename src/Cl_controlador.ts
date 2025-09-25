@@ -1,6 +1,6 @@
 import Cl_vTaxi from "./Cl_vTaxi.js";
 import Cl_mTaxi from "./Cl_mTaxi.js";
-import Cl_mCliente from "./Cl_mCliente.js";
+
 
 export default class Cl_controlador {
     public modelo: Cl_mTaxi;

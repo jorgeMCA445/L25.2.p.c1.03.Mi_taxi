@@ -13,7 +13,7 @@ export default class Cl_mTaxi {
         this.cntClientes = 0;
     }
 
-    public procesarCliente(cliente: Cl_mCliente): void {
+    procesarCliente(cliente: Cl_mCliente): void {
         if (cliente.edad < this.menorEdad) {
             this.menorEdad = cliente.edad;
         }
@@ -24,13 +24,13 @@ export default class Cl_mTaxi {
         this.cntClientes++;
     }
 
-    public clientesMayoresDeEdadF(): number {
+    clientesMayoresDeEdadF(): number {
         return this.cnMayorDEdadF;
     }
-    public menorEdadAtendida(): number {
+    menorEdadAtendida(): number {
         return this.menorEdad;
     }
-    public promedioDEdad(): number {
+    promedioDEdad(): number {
         if (this.cntClientes === 0) {
             return 0; // Evitar división por cero
         }
